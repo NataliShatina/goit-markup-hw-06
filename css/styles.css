@@ -43,6 +43,17 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.burger-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.burger-icon {
+  display: block;
+  fill: #2f2f37;
 }
 .nav-header {
   display: flex;
@@ -57,17 +68,20 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding: 24px 0;
-  margin-right: 76px;
+  padding: 16px 0;
+display: block;
+  /* padding: 24px 0;
+  margin-right: 76px; */
 }
 
 .header-logo .logo-part {
   color: #2e2f42;
 }
 .header-list {
-  display: flex;
+  display: none;
+  /* display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 40px; */
 }
 .header-link {
   font-weight: 500;
@@ -97,8 +111,9 @@ img {
   color: #404bbf;
 }
 .address {
-  font-style: normal;
-  margin-left: auto;
+  display: none;
+  /* font-style: normal;
+  margin-left: auto; */
 }
 .address-list {
   display: flex;
@@ -107,7 +122,7 @@ img {
 }
 .adress-link {
   display: block;
-  padding: 24px 0;
+  /* padding: 24px 0; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -832,6 +847,36 @@ width: 16px;
   padding-right: 16px;
   margin: 0 auto;
   }
+  /* HEADER */
+ .burger-btn {
+  display: none;
+ } 
+ 
+ .header-logo {
+    padding: 24px 0;
+  margin-right: 120px;
+  }
+ .header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.address {
+  font-style: normal;
+  display: block;
+  /* margin-left: auto; */
+}
+.address-list {
+  display: block;
+  /* flex-direction: column; */
+  gap: 12px;
+}
+.adress-link {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
   /* SECTION A */
   .capabilities-item {
   width: calc((100% - 24px) / 2);
@@ -913,6 +958,36 @@ width: 16px;
     padding-right: 15px;
     margin: 0 auto;
   }
+  /* HEADER */
+  .header-logo {
+    padding: 24px 0;
+  margin-right: 76px;
+  }
+  .header-list {
+    display: flex;
+  align-items: center;
+  gap: 40px;
+  }
+  .address {
+    display: inline;
+    font-style: normal;
+  margin-left: auto;
+  }
+  .address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.adress-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+padding: 24px 0;
+  }
+  
+.burger-btn {
+  display: none;
+}
   /* SECTION A */
   .capabilities {
      padding-top: 120px;
@@ -1003,6 +1078,7 @@ margin-bottom: 8px;
   padding-bottom: 100px;
 }
 .footer-container {
+  display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
 }
@@ -1012,11 +1088,15 @@ margin-bottom: 8px;
 .footer-text {
   width: 264px;
 }
+.footer-text-new {
+
+}
 .footer-feedback {
   display: block;
   justify-content: flex-end;
 }
  .footer-left-new {
+  display: flex;
   flex-wrap: nowrap;
   gap: 24px;
   justify-content: center;
