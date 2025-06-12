@@ -59,14 +59,19 @@
       </svg></button>
       </div>
 
-    <div class="mobile-menu is-open">
+    <div class="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-cross" type="button"></button>
-        <div>
+
+        <button class="mobile-menu-cross" type="button">
+          <svg class="mobile-icon-cross" width="8" height="8">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+        </button>
+        
           <nav class="mobile-nav">
             <ul class="mobile-list">
             <li class="mobile-item">
-              <a class="mobile-link" href="./index.html">Studio</a>
+              <a class="mobile-link current" href="./index.html">Studio</a>
             </li>
             <li class="mobile-item">
               <a class="mobile-link" href="">Portfolio</a>
@@ -76,8 +81,8 @@
             </li>
           </ul>
           </nav>
-        </div>
-        <div>
+        
+        
           <address class="mobile-adress">
            <ul class="mobile-adress-list">
              <li class="mobile-address-item">
@@ -90,6 +95,7 @@
                        </li>
            </ul>
           </address>
+
           <ul class="social-links-mobile">
                     <li class="mobile-list"><a href="https://www.instagram.com/" target="_blank" class="link-mobile">
                       <svg class="icon-mobile" width="24" height="24">
@@ -110,21 +116,17 @@
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg></a></li>
                   </ul>
-
-        </div>
-        
-
       </div>
     </div>
     </header>
 
     <main>
-      <!-- <section class="banner">
+      <section class="banner">
         <div class="container">
             <h1 class="banner-h">Effective Solutions for Your Business</h1>  
           <button class="banner-button" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
        <section class="capabilities"> 
         <div class="container">
@@ -473,7 +475,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-cross">
           <svg class="modal-icon-cross" width="8" height="8">
@@ -552,6 +554,87 @@
           </form>
         
       </div>
-    </div> -->
+    </div>
+
+    <div class="mobile-backdrop is-open">
+      <div class="mobile-modal">
+        <button type="button" class="mobile-modal-cross">
+          <svg class="mobile-modal-icon-cross" width="8" height="8">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg></button>
+        <p class="mobile-modal-text">Leave your contacts and we will call you back</p>
+        
+          <form>
+
+            <div class="mobile-modal-field">
+              <label for="user-name" class="mobile-label-text">Name</label>
+              <div class="mobile-modal-input-cover">
+                <input type="text"
+                class="mobile-modal-input"
+                name="user-name"
+                id="user-name"/>
+                <svg class="mobile-modal-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="mobile-modal-field">
+              <label for="user-phone" class="mobile-label-text">Phone</label>
+              <div class="mobile-modal-input-cover">
+                <input type="tel"
+                class="mobile-modal-input"
+                name="user-phone"
+                id="user-phone"/>
+                <svg class="mobile-modal-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            
+            
+              <div class="mobile-modal-field">
+                <label for="user-email" class="mobile-label-text">Email</label>
+                <div class="mobile-modal-input-cover">
+                  <input type="email"
+                  class="mobile-modal-input"
+                  name="user-email"
+                  id="user-email"/>
+                  <svg class="mobile-modal-input-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </div>
+              </div>
+            
+
+              <div class="mobile-modal-textarea">
+                <label class="mobile-label-text" for="user-comment">Comment</label>
+
+                    <textarea class="mobile-modal-item" id="user-comment"  name="user-comment"
+                      rows="5" placeholder="Text input"></textarea>
+                  
+              </div>
+    
+
+            <div class="mobile-modal-field mobile-check-container">
+              <input class="mobile-modal-check visually-hidden" type="checkbox" value="true" name="user-privacy" id="user-privacy" />
+              <label for="user-privacy"
+                class="mobile-check-text">
+                <span class="mobile-check-element"
+                  ><svg
+                    class="mobile-check-icon"
+                    width="10"
+                    height="8"
+                  >
+                    <use href="./images/icons.svg#icon-vector"></use></svg></span>
+                    I accept the terms and conditions of the
+                <a class="mobile-check-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="mobile-modal-button" type="submit">Send</button>
+          </form>
+        
+      </div>
+    </div>
   </body>
 </html>
