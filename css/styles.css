@@ -439,6 +439,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-size: cover;
   max-width: 1440px;
 }
+@media (min-resolution: 2x) {
+  .banner {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+    url(../images/hero/Dark-bg2x-min.jpg);
+  }
+}
 .banner-h {
   font-weight: 700;
   /* font-size: 56px; */
@@ -689,7 +698,8 @@ text-align: left;
 
 .portfolio-item {
   /* width: calc((100% - 48px) / 3); */
-   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-cover {
@@ -702,7 +712,7 @@ text-align: left;
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
 background: #fff;
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -994,6 +1004,16 @@ width: 16px;
   ),
   url(../images/hero/Dark-bg-tab.jpg);
 }
+
+@media (min-resolution: 2x) {
+  .banner {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+    url(../images/hero/Dark-bg2x-tab-min.jpg);
+  }
+}
 .banner-h {
   font-size: 56px;
   line-height: 1.07;
@@ -1142,7 +1162,17 @@ padding: 24px 0;
     rgba(46, 47, 66, 0.7)
   ),
   url(../images/hero/hero-img.jpg);
-} 
+}
+
+@media (min-resolution: 2x) {
+  .banner {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+    url(../images/hero/Dark-bg2x-lap-min.jpg);
+  }
+}
 .banner-h {
   /* max-width: 496px; */
   margin-bottom: 48px;
@@ -1231,6 +1261,10 @@ margin-bottom: 8px;
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .folio {
   text-align: left;
